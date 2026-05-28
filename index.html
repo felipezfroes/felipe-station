@@ -3,63 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Felipe Zotareli Froes</title>
+  <title>Felipe Station — Felipe Zotareli Froes</title>
 </head>
 <body>
-  <div class="container">
-    <img src="img/foto_perfil_felipe.jpeg" alt="Foto de Perfil" class="profile">
-    <h1>Felipe Zotareli Froes</h1>
 
-    <section class="social-media">
-      <div>
-        <ul>
-          <a href="https://github.com/felipezfroes" target="_blank">
-            <li><i class='bx bxl-github'></i></li>
-          </a>
-          <a href="https://www.linkedin.com/in/felipezfroesdev/" target="_blank">
-            <li><i class='bx bxl-linkedin'></i></li>
-          </a>
-          <a href="https://www.youtube.com/@FZF_Productions" target="_blank">
-            <li><i class='bx bxl-youtube'></i></li>
-          </a>
-          <a href="https://www.instagram.com/felipe_zfr/" target="_blank">
-            <li><i class='bx bxl-instagram'></i></li>
-          </a>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=felipefroes.dev@gmail.com" target="_blank">
-            <li><i class='bx bxl-gmail'></i></li>
-          </a>
-        </ul>
-      </div>
+  <!-- PARTÍCULAS -->
+  <div class="particles" id="pts"></div>
+
+  <!-- CARD PRINCIPAL -->
+  <div class="card" id="card">
+    <div class="cb tl"></div>
+    <div class="cb tr"></div>
+    <div class="cb bl"></div>
+    <div class="cb br"></div>
+
+    <!-- AVATAR -->
+    <div class="avatar-wrap">
+      <div class="avatar-ring"></div>
+      <img src="img/foto_perfil_felipe.jpg" alt="Felipe Zotareli Froes" class="avatar">
+      <div class="avatar-status"></div>
+    </div>
+
+    <!-- NOME E BIO -->
+    <h1 class="name">Felipe Z. Froes</h1>
+    <p class="bio">Game Dev · Engenharia de Software · Tecnologia</p>
+
+    <!-- REDES SOCIAIS -->
+    <section class="socials" aria-label="Redes sociais">
+      <a href="https://github.com/felipezfroes" class="s-btn" target="_blank" aria-label="GitHub">
+        <i class='bx bxl-github'></i>
+      </a>
+      <a href="https://www.linkedin.com/in/felipezfroesdev/" class="s-btn" target="_blank" aria-label="LinkedIn">
+        <i class='bx bxl-linkedin'></i>
+      </a>
+      <a href="https://www.youtube.com/@FZF_Productions" class="s-btn" target="_blank" aria-label="YouTube">
+        <i class='bx bxl-youtube'></i>
+      </a>
+      <a href="https://www.instagram.com/felipe_zfr/" class="s-btn" target="_blank" aria-label="Instagram">
+        <i class='bx bxl-instagram'></i>
+      </a>
+      <a href="mailto:felipefroes.dev@gmail.com" class="s-btn" target="_blank" aria-label="E-mail">
+        <i class='bx bxl-gmail'></i>
+      </a>
     </section>
 
-    <p class="sub-title">Dev front-end · Indie gamedev · Eng. de Software</p>
+    <!-- DIVISOR -->
+    <div class="divider">
+      <div class="dline"></div>
+      <span class="ddiamond">&#9670;</span>
+      <div class="dline"></div>
+    </div>
 
-    <a href="https://ecos-do-olimpo.felipezfroes.com" class="link" target="_blank">
-      <i class='bx bx-joystick'></i>
-      <p>Ecos do Olimpo</p>
-    </a>
+    <!-- LINKS -->
+    <div class="links">
 
-    <a href="https://fzf-productions.itch.io" class="link" target="_blank">
-      <i class='bx bx-joystick'></i>
-      <p>Itch.io</p>
-    </a>
+      <a href="https://ecos-do-olimpo.felipezfroes.com" class="link l1" target="_blank">
+        <div class="link-icon"><i class='bx bx-joystick'></i></div>
+        <div class="link-body">
+          <span class="link-title">Ecos do Olimpo</span>
+          <span class="link-sub">Jogo em desenvolvimento</span>
+        </div>
+        <span class="tag">Em dev</span>
+        <i class='bx bx-chevron-right link-arrow'></i>
+      </a>
 
-    <a href="https://felipezfroes.com" class="link" target="_blank">
-      <i class='bx bx-code-alt'></i>
-      <p>Portfólio</p>
-    </a>
+      <a href="https://felipezfroes.com" class="link l3" target="_blank">
+        <div class="link-icon"><i class='bx bx-code-alt'></i></div>
+        <div class="link-body">
+          <span class="link-title">Portfólio de projetos</span>
+          <span class="link-sub">felipezfroes.com</span>
+        </div>
+        <i class='bx bx-chevron-right link-arrow'></i>
+      </a>
 
-    <a href="https://fzfproductions.felipezfroes.com" class="link" target="_blank">
-      <i class='bx bxl-youtube'></i>
-      <p>FZF Productions</p>
-    </a>
+      <a href="https://fzf-productions.itch.io" class="link l2" target="_blank">
+        <div class="link-icon"><i class='bx bx-game'></i></div>
+        <div class="link-body">
+          <span class="link-title">Meus jogos no Itch.io</span>
+          <span class="link-sub">fzf-productions.itch.io</span>
+        </div>
+        <i class='bx bx-chevron-right link-arrow'></i>
+      </a>
 
-    <a href="https://esportefavorito.felipezfroes.com" class="link" target="_blank">
-      <i class='bx bx-link-external'></i>
-      <p>Esporte Favorito</p>
-    </a>
+      <a href="https://fzfproductions.felipezfroes.com" class="link l4" target="_blank">
+        <div class="link-icon"><i class='bx bxl-youtube'></i></div>
+        <div class="link-body">
+          <span class="link-title">FZF Productions</span>
+          <span class="link-sub">Canal no YouTube</span>
+        </div>
+        <i class='bx bx-chevron-right link-arrow'></i>
+      </a>
+
+      <a href="https://esportefavorito.felipezfroes.com" class="link l5" target="_blank">
+        <div class="link-icon"><i class='bx bx-football'></i></div>
+        <div class="link-body">
+          <span class="link-title">Esporte Favorito</span>
+          <span class="link-sub">Projeto de fotografia esportiva</span>
+        </div>
+        <i class='bx bx-chevron-right link-arrow'></i>
+      </a>
+
+    </div>
+
+    <p class="footer">felipezfroes.com &nbsp;·&nbsp; 2026</p>
   </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
